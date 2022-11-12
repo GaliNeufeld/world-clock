@@ -1,0 +1,14 @@
+body {
+  background: url("../earth.jpeg");
+  width: 100%;
+  background-size: cover;
+}
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1,
+footer {
+  text-align: center;
+}
