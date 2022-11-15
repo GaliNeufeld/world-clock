@@ -32,6 +32,9 @@ citiesSelectElement.addEventListener("change", updateCity);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();  
+  }
   let cityName = cityTimeZone
     .replace("_", " ")
     .replace("Tokyo", "Osaka")
